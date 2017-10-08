@@ -26,6 +26,9 @@ class DefaultController extends Controller
     {
         $a = "Adrianna lubi Pingwiny";
 
-        return $this->render('default/index.html.twig', ['zmienna' => $a]);
+        return $this->render('default/listCourses/listCourses.html.twig', ['zmienna' => $a]);
     }
+
+
+
 }
