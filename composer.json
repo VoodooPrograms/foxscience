@@ -21,10 +21,13 @@
     },
     "require": {
         "php": ">=5.5.9",
+        "components/jquery": "3.1.1",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
         "friendsofsymfony/user-bundle": "~2.0",
         "incenteev/composer-parameter-handler": "^2.0",
+        "javiereguiluz/easyadmin-bundle": "^1.17",
+        "robloach/component-installer": "^0.2.3",
         "sensio/distribution-bundle": "^5.0.19",
         "sensio/framework-extra-bundle": "^3.0.2",
         "symfony/monolog-bundle": "^3.1.0",
@@ -54,7 +57,8 @@
         ]
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "component-dir": "web/assets/vendor"
     },
     "extra": {
         "symfony-app-dir": "app",

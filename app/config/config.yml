@@ -72,6 +72,15 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
     user_class: AppBundle\Entity\User
+    registration:
+        form:
+            type: AppBundle\Form\RegistrationType
     from_email:
         address: "adrianna.fidura@gmail.com"
         sender_name: "bartoszbelski@gmail.com"
+
+easy_admin:
+    entities:
+        - AppBundle\Entity\courses
+        - AppBundle\Entity\category
+        - AppBundle\Entity\User

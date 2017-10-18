@@ -5,20 +5,30 @@
         <header>
             <span id="logo-text">Fox</span><span>Science</span>
         </header>
+        <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="left-bar">
+            <div class="button-collection">
+                <div class="button-single"><a href="#">Strona główna</a></div>
+                <div class="button-single"><a href="#">Kursy</a></div>
+                <div class="button-single"><a href="#">Zostań instruktorem</a></div>
+                <div class="button-single"><a href="#">O serwisie</a></div>
+                <hr />
+                <div class="button-single"><a href="{{ path('fos_user_security_login') }}">Logowanie</a></div>
+                <div class="button-single"><a href="{{ path('fos_user_registration_register') }}">Rejestracja</a></div>
+
+            </div>
+        </div>
         <div id="center-bar">
             {% block content %}
 
             {% endblock %}
         </div>
-        <div id="left-bar">
-            <div class="button-collection">
-                <div class="button-single"><a href="#">Strona główna</a></div>
-                <div class="button-single"><a href="#">Strona główna</a></div>
-                <div class="button-single"><a href="#">Strona główna</a></div>
-                <div class="button-single"><a href="#">Strona głównąćża</a></div>
 
-            </div>
-        </div>
         <footer>
             <div id="footer-container">&copy FoxScience</div>
         </footer>
@@ -29,3 +39,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 {% endblock %}
+{% block javascripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{{ asset('js/hamburger.js') }}"></script>
+{% endblock %}
+
